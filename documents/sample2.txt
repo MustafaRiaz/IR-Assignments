@@ -1,0 +1,2 @@
+Java is also widely used for enterprise-level applications. It's known for its strong memory management.
+Developers often use Java for Android app development and large-scale system integration.

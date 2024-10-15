@@ -1,0 +1,2 @@
+JavaScript is mainly used for web development, especially on the client side. 
+Developers use JavaScript frameworks like React and Angular to build interactive web applications.
