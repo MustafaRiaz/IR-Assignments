@@ -1,8 +1,7 @@
 import os
 import math
 
-# Define a set of common English stopwords
-STOPWORDS = {
+STOPWORDS={
     "a", "an", "the", "and", "or", "but", "if", "while", "for", "with",
     "about", "against", "between", "into", "through", "during", "before",
     "after", "above", "below", "to", "from", "up", "down", "in", "out",
@@ -14,7 +13,7 @@ STOPWORDS = {
 }
 
 def getAllTextDocuments():
-    documents = []
+    documents=[]
     for file in os.listdir("documents"):
         if file.endswith(".txt"):
             with open(os.path.join("documents", file), "r", encoding="utf-8") as f:
@@ -22,46 +21,47 @@ def getAllTextDocuments():
     return documents
 
 def preprocess(text):
-    # Convert text to lowercase and split into words
-    words = text.lower().split()
-    # Remove punctuation and stopwords
-    processed = [word.strip('.,!?";:()[]') for word in words if word.strip('.,!?";:()[]') not in STOPWORDS]
+    words=text.lower().split()
+    processed=[]
+    for word in words:
+        cleaned_word=word.strip('.,!?";:()[]')
+        if cleaned_word not in STOPWORDS:
+            processed.append(cleaned_word)
     return processed
 
 def TermFrequency(query, document_content):
-    words = preprocess(document_content)
-    query_count = words.count(query.lower())
+    words=preprocess(document_content)
+    query_count=words.count(query.lower())
     return query_count / len(words) if len(words) > 0 else 0
 
 def InverseDocumentFrequency(query, documents):
-    query = query.lower()
-    count = 0
+    query=query.lower()
+    count=0
     for _, doc_content in documents:
-        words = preprocess(doc_content)
+        words=preprocess(doc_content)
         if query in words:
-            count += 1
+            count+=1
+    N=len(documents)
+    idf_value=math.log(N / (count + 1))
+    return idf_value
 
-    if count == 0:
-        return 0
-    return math.log(len(documents) / count)
-
-def TFIDF(query, document_content, documents):
-    tf = TermFrequency(query, document_content)
-    idf = InverseDocumentFrequency(query, documents)
+def TFIDF(query, document_content, idf):
+    tf=TermFrequency(query, document_content)
     return tf * idf
 
 if __name__ == "__main__":
-    documents = getAllTextDocuments()
-    query = "Python"  # Change the query term here
-    found_in_documents = []
+    documents=getAllTextDocuments()
+    query="Python"
+    idf=InverseDocumentFrequency(query, documents)
+    print(f"IDF for '{query}': {idf:.4f}")
+    found_in_documents=[]
     
     for doc_name, doc_content in documents:
-        tf = TermFrequency(query, doc_content)
-        tfidf = TFIDF(query, doc_content, documents)
+        tfidf=TFIDF(query, doc_content, idf)
 
-        if tf > 0:
+        if tfidf > 0:
             found_in_documents.append(doc_name)
-            print(f"Document '{doc_name}': TF = {tf:.4f}, TF-IDF = {tfidf:.4f}")
+            print(f"Document '{doc_name}': TF-IDF={tfidf:.4f}")
     
     if found_in_documents:
         print("\nQuery found in the following documents:")

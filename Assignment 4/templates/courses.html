@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Courses</h1>
+<script>
+    document.querySelectorAll("h2").forEach(category => {
+        category.onclick = () => {
+            const courseList = category.nextElementSibling;
+            courseList.style.display = courseList.style.display === "none" ? "block" : "none";
+        };
+    });
+    </script>
+    
+{% for category, courses in categories.items() %}
+    <h2>{{ category }}</h2>
+    <ul>
+        {% for course in courses %}
+            <li><a href="{{ url_for('course_detail', category=category, course_name=course) }}">{{ course }}</a></li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+{% endblock %}
+
