@@ -1,0 +1,17 @@
+Computer technology is an expanding branch of engineering, with roots in both electrical engineering and 
+computer science. It includes the related areas of computer hardware and software; computer interfacing, 
+programming, and networking; analog and digital electronics; and robotics. Computer technicians, technologists, 
+and engineers work in every sector of society, in careers ranging from building and repairing computer systems 
+to designing and installing computer networks, to designing and building prototype robots and electronic devices.
+ Students taking computer technology courses will learn to work safely with computer equipment, electronic 
+circuits, and robotic devices, and will explore the Essential Skills and work habits that are important for 
+success in computer technology. Computer technology courses prepare students for apprenticeship, further 
+study at college or university, or entry into the workplace directly after graduation.
+
+This course examines computer systems and control of external devices.
+ Students will assemble computers and small networks by installing and configuring 
+appropriate hardware and software. Students will develop knowledge and skills in electronics, 
+robotics, programming, and networks, and will build systems that use computer programs and interfaces
+ to control and/or respond to external devices. Students will develop an awareness of related environmental
+ and societal issues, and will learn about college and university programs leading to careers in computer
+ technology. python, is a good language, you can use python in AI.

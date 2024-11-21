@@ -1,0 +1,2 @@
+C++ is used for systems programming and game development. 
+It's known for its performance and is often chosen for real-time applications where speed is crucial.
