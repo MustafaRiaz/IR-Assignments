@@ -1,2 +1,36 @@
-Java is also widely used for enterprise-level applications. It's known for its strong memory management.
-Developers often use Java for Android app development and large-scale system integration.
+A programming language is a set of instructions written by a programmer to deliver instructions to the computer to perform and accomplish a task. This set of instructions is usually viewed as incomprehensible code structured following a definite programming language syntax.
+
+Gaining a job in the IT industry is easy and also quite tough. You will need to possess both technical and non-technical skills. In terms of technical, the first and foremost skill any aspirant looking for a place in tech must acquire is the mastery of programming languages.
+
+Whether a newbie or a tech student, you might have already heard about programming languages. However, you need to know that the term ‘programming languages’ is abstract. There are various programming languages you may and may not have heard of, and each is categorised under different categories.
+
+Instead of jumping on to learn a programming language which is in demand, read this article to learn in-depth about programming languages and choose the one which sparks interest in you.
+
+What Is The Difference Between Low-Level Programming Languages And High-Level Programming Languages?
+Programming languages are mainly differentiated into two categories: high and low. Languages are categorised into these two categories based on their human level of understanding.
+
+Level of Understanding
+High-level programming languages can be easily understood and interpreted by people. In contrast, low-level programming languages are quite challenging to interpret and more machine friendly than human-friendly.
+
+Ease of Debugging
+In terms of understanding and debugging flexibility, high-level programming language wins since the code is easy to interpret, and the programmer can easily solve the errors in a code. However, considering the complexity of low-level programming languages, detecting the errors and their source can be hard.
+
+Memory Efficient
+However, low-level programming languages are memory efficient, which means programs excite faster using low-level languages. Compared to them, high-level languages are quite slow in terms of program execution.
+
+Compatibility 
+High-level programming languages are cross-platform, so you can work and execute the code on any platform. However, low-level programming languages are machine-dependent so that the code can be run only on a specific platform.
+
+Translation 
+Programming languages are a set of instructions provided to a machine and converted to machine-readable code. In this case, high-level programming languages use an interpreter to translate the code, while low-level languages use an assembler.
+
+Usage 
+Due to their simplicity and platform agnostic ability, high-level programming languages are prevalently preferred and used in developing software. However, low-level languages, though still in use, are scarce.
+
+How Many Programming Languages Are There?
+Though it is an evident fact that there are a plethora of programming languages out there, only a handful is popular and well known. According to Wikipedia, there is a whopping amount of 700+ programming languages. These programming languages are used for different purposes and come with other functionalities.
+
+Generally, programming languages are categorised into high-level and low-level languages; however, as you dive deeper, there are even more types you should know about programming languages before settling to learn and master one.
+
+Types of Programming Languages
+Mainly there are five types of programming languages, they are:

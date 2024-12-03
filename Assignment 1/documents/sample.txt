@@ -1,2 +1,0 @@
-Python is a popular programming language for web development, data analysis, and automation. 
-Many developers use Python for building complex applications and handling large data sets
